@@ -1,0 +1,35 @@
+.container {
+  max-width: 360px;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+button{
+  width: 180px;
+  height: 60px;
+}
+.start {
+  transition-duration: 0.4s;
+}
+
+.start:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.stop {
+  transition-duration: 0.4s;
+}
+
+.stop:hover {
+  background-color: #af0300;
+  color: white;
+}
+
+.result{
+  font-size: 30px;
+  font-family: "Roboto Light";
+  height: 35px;
+  text-align: center;
+}
+
