@@ -31,10 +31,11 @@ export class AppComponent {
     (document.querySelector("#col") as HTMLElement).style.color = 'black'
     if (this.result.slice(0, 2) == this.reverseString(this.result.slice(3))) {
       (document.querySelector("#col") as HTMLElement).style.color = 'red'
-    } else if (Number.isInteger(parseInt(this.result, 10)) && parseInt(this.result, 10).toString().length == this.result.length) {
+    }
+    if (Number.isInteger(parseInt(this.result, 10)) && parseInt(this.result, 10).toString().length == this.result.length) {
       (document.querySelector("#col") as HTMLElement).style.color = 'blue'
-      return
-    } else if (this.result.indexOf("0") != -1) {
+    }
+    if (this.result.indexOf("0") != -1) {
       this.result = ""
     }
     return this.result;
