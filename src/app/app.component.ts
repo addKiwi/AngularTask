@@ -29,7 +29,7 @@ export class AppComponent {
       this.result += this.letters[Math.floor(Math.random() * lettersLength)];
     }
     (document.querySelector("#col") as HTMLElement).style.color = 'black'
-    if (this.result.slice(0, 2) == this.reverseString(this.result.slice(3))) {
+    if (this.result === this.result.split("").reverse().join("") ) {
       (document.querySelector("#col") as HTMLElement).style.color = 'red'
     }
     if (Number.isInteger(parseInt(this.result, 10)) && parseInt(this.result, 10).toString().length == this.result.length) {
